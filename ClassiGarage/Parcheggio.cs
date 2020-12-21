@@ -11,11 +11,11 @@ namespace ClassiGarage
         public Auto Auto { get; set; }
         public Biglietto Biglietto { get; set; }
 
-        public Parcheggio(int numero, char lettera, Livello livello)
+        public Parcheggio(int n, char l, Livello li)
         {
-            Numero = numero;
-            Lettera = lettera;
-            livello.Parcheggi.Add(this);
+            Numero = n;
+            Lettera = l;
+            li.Parcheggi.Add(this);
         }
     }
 }

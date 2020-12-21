@@ -29,6 +29,7 @@ namespace ClassiGarage
 
         public Biglietto Parcheggia(Auto auto)
         {
+            //trovare dati da passare
             auto.Parcheggio = new Parcheggio();
             auto.Biglietto = new Biglietto(DateTime.Now, auto, auto.Parcheggio);
             return auto.Biglietto;
